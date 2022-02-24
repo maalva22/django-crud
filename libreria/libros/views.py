@@ -68,7 +68,7 @@ def create_libros(request):
         return redirect('libros')
     
     context['form'] = form
-    return render(request,'libros/crete_libros.html', context)
+    return render(request,'libros/create_libros.html', context)
 
 
 #vista para actualizar autores
