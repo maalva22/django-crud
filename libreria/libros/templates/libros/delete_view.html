@@ -6,7 +6,7 @@
 
 {% block headers %}
 <link rel="stylesheet" href="{% static 'css/new_autor.css' %}">
-<title>Delete Autor</title>
+<title>Delete Libro</title>
 {% endblock %}
 
 {% block content %}
@@ -16,7 +16,7 @@
         {% csrf_token %}
         Are you want to delete this item ?
         <input type="submit" value="Yes" />
-        <a href="{% url 'autores' %}">Cancel </a>
+        <a href="{% url 'libros' %}">Cancel </a>
     </form> 
 </div>
 
