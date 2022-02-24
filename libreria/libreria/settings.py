@@ -85,7 +85,7 @@ DATABASES = {
 		'HOST' : 'jelani.db.elephantsql.com' ,
 		'PORT' : '' 
     }
-}
+} 
 
 
 # Password validation

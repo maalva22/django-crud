@@ -27,11 +27,13 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{% url 'autores' %}">Listar</a></li>
-                  <li><a class="dropdown-item" href="{% url 'new_autor' %}">Nuevo</a></li>
+                  <li><a class="dropdown-item" href="{% url 'new_autor' %}">Nuevo</a></li>               
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Libros</a>
+                <a class="dropdown-menu">Libros</a>
+                <li><a class="dropdown-item" href="{% url 'list_libros' %}">Listar</a></li>
+                <li><a class="dropdown-item" href="{% url 'new_libro' %}">Nuevo</a></li>  
               </li>
             </ul>
             <form class="d-flex">

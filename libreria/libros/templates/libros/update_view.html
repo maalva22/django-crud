@@ -1,11 +1,14 @@
 {% extends "base_template.html" %}
 {% load static %}
 
+{% load static %}
+
 
 {% block headers %}
 <link rel="stylesheet" href="{% static 'css/new_autor.css' %}">
-<title>Nuevo Autor</title>
+<title>Update Autor</title>
 {% endblock %}
+
 
 {% block content %}
 <div class="container formulario">
@@ -17,7 +20,7 @@
         <!-- Using the formset -->
         {{ form.as_p }}
          
-        <input type="submit" value="Guardar" class="btn btn-success">
+        <input type="submit" value="Actualizar" class="btn btn-success">
     </form>   
 </div>
 

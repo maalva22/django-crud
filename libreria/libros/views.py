@@ -4,7 +4,9 @@ from django.template import loader
 from django.views.generic.detail import DetailView
 
 from .models import Author
+from .models import Book
 from .forms import AuthorForm
+from .models import librosForm
 
 # Create your views here.
 def index(request):
@@ -15,9 +17,15 @@ def index(request):
 #Vista para listar autores
 def listarAutores(request):
     lista = Author.objects.all()
-    a = "hola mundo"
-    context = {'lista':lista,'a':a,}
+    context = {'lista':lista}
     template = loader.get_template('autores/autores.html')
+    return HttpResponse(template.render(context,request))
+
+    #Vista para listar libros
+def listarLibros(request):
+    listaB = Book.objects.all()
+    context = {'listaB':listaB}
+    template = loader.get_template('libros/libros.html')
     return HttpResponse(template.render(context,request))
 
 #Vista para ver detalles de un autor

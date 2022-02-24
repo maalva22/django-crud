@@ -18,4 +18,5 @@ class Book(models.Model):
     cost = models.IntegerField()
     author =  models.ForeignKey(Author, on_delete=models.CASCADE)
 
-
+    def get_book_name(self):
+        return self.name + " by " + self.author

@@ -1,5 +1,6 @@
 from django import forms
 from .models import Author
+from .models import Book
 
 #Crear formulario
 class AuthorForm(forms.ModelForm):
@@ -14,4 +15,18 @@ class AuthorForm(forms.ModelForm):
             'last_name',
             'photo',
             'birth_date'
+        ]
+class librosForm(forms.ModelForm):
+
+    #metaclase
+    class Meta:
+        model = Book
+
+        #especificar los campos
+        fields = [
+            'name', 
+            'description', 
+            'year', 
+            'cost', 
+            'author'
         ]
