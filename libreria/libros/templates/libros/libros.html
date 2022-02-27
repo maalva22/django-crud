@@ -11,7 +11,7 @@
 <div class="container lista">
     <ul class="list-group">
         {% for au in listaB %}
-        <li class="list-group-item">{{ au.get_book_name }} &nbsp;<a href="{% url 'libro_detalle' au.id %}" class="btn btn-sm btn-success">Detalles</a>&nbsp;<a href="{% url 'libros_update' au.id %}" class="btn btn-sm btn-warning">actualizar</a>&nbsp;<a href="{% url 'libros_delete' au.id %}" class="btn btn-sm btn-danger">eliminar</a></li>
+        <li class="list-group-item">{{ au.get_book_name }} &nbsp;<a href="{% url 'libros_detalle' au.id %}" class="btn btn-sm btn-success">Detalles</a>&nbsp;<a href="{% url 'libros_update' au.id %}" class="btn btn-sm btn-warning">actualizar</a>&nbsp;<a href="{% url 'libros_delete' au.id %}" class="btn btn-sm btn-danger">eliminar</a></li>
         {% endfor %}
     </ul>    
 </div>

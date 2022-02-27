@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.postgres',
+    
 ]
 
 MIDDLEWARE = [
@@ -79,9 +80,9 @@ WSGI_APPLICATION = 'libreria.wsgi.application'
 DATABASES = {
        'default': {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-		'NAME' : 'biszjzzx',
-		'USER' : 'biszjzzx',
-		'PASSWORD' : 'AkM6qnfEqtZKMgX1m382gqRSDqTN2vbR',
+		'NAME' : 'zdpufnkx',
+		'USER' : 'zdpufnkx',
+		'PASSWORD' : 'rXnt6_zauNwWKHrmpFclj4JrCZ3rrsIE',
 		'HOST' : 'castor.db.elephantsql.com' ,
 		'PORT' : '' 
     }
