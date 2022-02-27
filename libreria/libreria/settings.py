@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'libreria.wsgi.application'
 DATABASES = {
        'default': {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-		'NAME' : 'vqrxmkom',
-		'USER' : 'vqrxmkom',
-		'PASSWORD' : 'g0tqR9y4OgxX129pghc6eAQS0qJWEPm0',
-		'HOST' : 'jelani.db.elephantsql.com' ,
+		'NAME' : 'biszjzzx',
+		'USER' : 'biszjzzx',
+		'PASSWORD' : 'AkM6qnfEqtZKMgX1m382gqRSDqTN2vbR',
+		'HOST' : 'castor.db.elephantsql.com' ,
 		'PORT' : '' 
     }
 } 
